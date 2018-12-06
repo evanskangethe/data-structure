@@ -64,6 +64,24 @@ function SLinkedList() {
         }
         
         return found;
+    },
+    
+    get size(){
+        return length;
+    },
+    
+    print: function() {
+        var results = [];
+        
+        var curr = head;
+        
+        while(curr){
+            results.push(curr.value);
+            
+            curr = curr.next;
+        }
+        
+        return results;
     }
   };
 }
